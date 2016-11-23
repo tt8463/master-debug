@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Debug - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Debug.res" /d "NDEBUG" /d "_AFXDLL" "D:\QQPCmgr\桌面\Debug\Debug.rc"" 
+Creating temporary file "D:\QQPCmgr\Temp\RSPBD.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Debug.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\QQPCmgr\桌面\Debug\ClientSocket.cpp"
+"D:\QQPCmgr\桌面\Debug\Debug.cpp"
+"D:\QQPCmgr\桌面\Debug\DebugDlg.cpp"
+]
+Creating command line "cl.exe @D:\QQPCmgr\Temp\RSPBD.tmp" 
+Creating temporary file "D:\QQPCmgr\Temp\RSPBE.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Debug.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\QQPCmgr\桌面\Debug\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\QQPCmgr\Temp\RSPBE.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/Debug.pdb" /machine:I386 /out:"Release/Debug.exe"  ".\Release\ClientSocket.obj" ".\Release\Debug.obj" ".\Release\DebugDlg.obj" ".\Release\StdAfx.obj" ".\Release\Debug.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+d:\qqpcmgr\桌面\debug\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Compiling...
+ClientSocket.cpp
+Debug.cpp
+DebugDlg.cpp
+D:\QQPCmgr\桌面\Debug\DebugDlg.cpp(597) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+D:\QQPCmgr\桌面\Debug\DebugDlg.cpp(599) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+D:\QQPCmgr\桌面\Debug\DebugDlg.cpp(601) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+D:\QQPCmgr\桌面\Debug\DebugDlg.cpp(603) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Debug.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,331 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Debug.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Debug.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Debug"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Debug 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2016",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DEBUG_DIALOG DIALOGEX 0, 0, 715, 461
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Debug"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,
+                    37,13,100,15
+    LTEXT           "IP：",IDC_STATIC,17,16,16,12
+    LTEXT           "端口号：",IDC_STATIC,148,17,33,10
+    EDITTEXT        IDC_EDIT1,185,13,35,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "连接",IDC_BUTTON1,227,14,37,14
+    PUSHBUTTON      "断开",IDC_BUTTON_CLOSE,271,14,37,14
+    GROUPBOX        "仪器参数",IDC_STATIC,16,35,154,246
+    LTEXT           "吸合后发光次数：",IDC_STATIC,30,59,65,12
+    EDITTEXT        IDC_EDIT_XHFGQ,102,56,53,16,ES_AUTOHSCROLL
+    LTEXT           "吸合前发光次数：",IDC_STATIC,30,81,65,12
+    EDITTEXT        IDC_EDIT_XHFGH,102,78,53,16,ES_AUTOHSCROLL
+    LTEXT           "吸合时间：",IDC_STATIC,30,105,65,12
+    EDITTEXT        IDC_EDIT_XH,102,101,53,16,ES_AUTOHSCROLL
+    LTEXT           "吸合前等待时间：",IDC_STATIC,30,125,65,12
+    EDITTEXT        IDC_EDIT_XHQ,102,122,53,16,ES_AUTOHSCROLL
+    LTEXT           "吸合后等待时间：",IDC_STATIC,30,147,65,12
+    EDITTEXT        IDC_EDIT_XHH,102,145,53,16,ES_AUTOHSCROLL
+    LTEXT           "发光间隔：",IDC_STATIC,30,171,65,12
+    EDITTEXT        IDC_EDIT_FG,102,167,53,16,ES_AUTOHSCROLL
+    LTEXT           "端温参数：",IDC_STATIC,29,193,65,12
+    EDITTEXT        IDC_EDIT_DW,102,189,53,16,ES_AUTOHSCROLL
+    LTEXT           "机号：",IDC_STATIC,29,215,65,12
+    EDITTEXT        IDC_JIHAO,102,211,53,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "获取",IDC_BUTTON2,71,232,26,14
+    EDITTEXT        IDC_EDIT_LENGH,335,21,27,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIAOSHI,369,21,26,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "获取",IDC_BUTTON_TIAOSHIHUO,603,21,31,15
+    PUSHBUTTON      "更新",IDC_BUTTON_TIAOSHIUPD,639,21,31,15
+    GROUPBOX        "光学参数",IDC_STATIC,187,35,344,308
+    LTEXT           "发光强度：",IDC_STATIC,208,73,42,14
+    LTEXT           "1通道",IDC_STATIC,277,50,26,12
+    LTEXT           "2通道",IDC_STATIC,330,50,26,10
+    LTEXT           "3通道",IDC_STATIC,382,50,26,12
+    LTEXT           "4通道",IDC_STATIC,433,50,26,12
+    EDITTEXT        IDC_EDIT_FG1,267,70,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FG2,320,70,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FG3,373,70,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FG4,425,70,39,15,ES_AUTOHSCROLL
+    LTEXT           "X/127",IDC_STATIC,505,73,21,9
+    LTEXT           "AD值：",IDC_STATIC,209,194,42,14
+    EDITTEXT        IDC_EDIT_AD11,267,190,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AD12,319,190,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AD13,373,190,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AD14,425,190,39,15,ES_AUTOHSCROLL
+    LTEXT           "AD值：",IDC_STATIC,209,220,42,14
+    EDITTEXT        IDC_EDIT_AD21,267,216,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AD22,319,216,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AD23,373,216,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AD24,425,216,39,15,ES_AUTOHSCROLL
+    LTEXT           "AD值：",IDC_STATIC,209,248,42,14
+    EDITTEXT        IDC_EDIT_AD31,267,244,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AD32,319,244,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AD33,373,244,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AD34,425,244,39,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "启动",IDC_BUTTON_START,420,270,41,15
+    PUSHBUTTON      "停止",IDC_BUTTON_STOP,469,270,41,15
+    PUSHBUTTON      "调试1",IDC_BUTTON_DEBUG,469,190,39,14
+    PUSHBUTTON      "调试2",IDC_BUTTON_DEBUG2,469,216,39,14
+    PUSHBUTTON      "调试3",IDC_BUTTON_DEBUG3,469,244,39,14
+    PUSHBUTTON      "获取",IDC_BUTTON_GET1,470,56,31,15
+    PUSHBUTTON      "更新",IDC_BUTTON_UPDATE1,470,76,31,15
+    LTEXT           "B1实测",IDC_STATIC,209,283,30,12
+    LTEXT           "B1真值",IDC_STATIC,253,282,30,12
+    LTEXT           "B2真值",IDC_STATIC,342,282,30,12
+    LTEXT           "B2实测",IDC_STATIC,298,282,30,12
+    EDITTEXT        IDC_EDIT_BC1X,199,302,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BC1Y,244,302,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BC2X,290,302,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BC2Y,335,302,41,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_XM,389,302,55,80,CBS_SIMPLE | 
+                    CBS_DISABLENOSCROLL | WS_TABSTOP
+    PUSHBUTTON      "补偿",IDC_BUTTON_BUCHANG,455,301,31,15
+    PUSHBUTTON      "获取",IDC_BUTTON_GETBUCHANG,490,301,31,15
+    PUSHBUTTON      "更新",IDC_BUTTON_UPDATE,107,232,26,14
+    LTEXT           "AD值细分：",IDC_STATIC,208,109,45,14
+    EDITTEXT        IDC_EDIT_FG5,267,105,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FG6,320,105,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FG7,373,105,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FG8,425,105,39,15,ES_AUTOHSCROLL
+    LTEXT           "X/1000",IDC_STATIC,505,113,21,9
+    PUSHBUTTON      "获取",IDC_BUTTON_GET_XF,470,95,31,15
+    PUSHBUTTON      "更新",IDC_BUTTON_UPDATE_XF,470,115,31,15
+    EDITTEXT        IDC_EDIT_BJ,399,21,26,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "采集",IDC_BUTTON_SAVE_DATA,15,297,87,38
+    PUSHBUTTON      "打开Excel",IDC_BUTTON_EXCEL,119,309,50,14
+    LTEXT           "检测光：",IDC_STATIC,208,147,45,14
+    EDITTEXT        IDC_EDIT_JC1,267,143,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_JC2,320,143,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_JC3,373,143,39,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_JC4,425,143,39,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "获取",IDC_BUTTON_GET_JC,470,133,31,15
+    PUSHBUTTON      "更新",IDC_BUTTON_UPDATE_JC,470,153,31,15
+    EDITTEXT        IDC_BASE_VALUE,45,255,53,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "基准电压",IDC_BUTTON_BASE_VALUE,109,255,39,14
+    PUSHBUTTON      "程序切换",IDC_BUTTON_START_STOP,691,436,20,20
+    EDITTEXT        IDC_EDIT_XF,430,21,26,16,ES_AUTOHSCROLL
+    LTEXT           "行程",IDC_STATIC,341,7,20,12
+    LTEXT           "贴合行程",IDC_STATIC,366,7,32,12
+    LTEXT           "门速",IDC_STATIC,403,7,19,12
+    LTEXT           "贴合速度",IDC_STATIC,429,7,35,12
+    EDITTEXT        IDC_EDIT_BD,473,21,26,16,ES_AUTOHSCROLL
+    LTEXT           "标准色卡标定值",IDC_STATIC,474,5,67,12
+    EDITTEXT        IDC_EDIT_BD2,507,21,26,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BD3,537,21,26,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BD4,569,21,26,16,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Debug Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Debug\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Debug.EXE\0"
+            VALUE "ProductName", "Debug 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DEBUG_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 711
+        BOTTOMMARGIN, 456
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DEBUG_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_XM, 0x403, 4, 0
+0x4448, 0x004c, 
+    IDC_COMBO_XM, 0x403, 4, 0
+0x4c47, 0x0055, 
+    IDC_COMBO_XM, 0x403, 3, 0
+0x4354, "\000" 
+    IDC_COMBO_XM, 0x403, 3, 0
+0x4754, "\000" 
+    IDC_COMBO_XM, 0x403, 4, 0
+0x4c41, 0x0054, 
+    IDC_COMBO_XM, 0x403, 3, 0
+0x6248, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Debug(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Debug.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
